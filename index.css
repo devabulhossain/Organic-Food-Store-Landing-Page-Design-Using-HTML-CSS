@@ -9,7 +9,7 @@
 body {
   padding: 0rem 2rem;
   font-family: "Inter", sans-serif;
-  background-color: #f3fcf7;
+  background-color: #fff;
 }
 
 :root {
@@ -20,6 +20,7 @@ body {
 .section-w {
   max-width: 1280px;
   margin: auto;
+  padding: 0rem 1rem;
 }
 #hero-section {
   background-color: #f3fcf7;
@@ -59,6 +60,16 @@ nav {
 
 .nav-links li a:hover {
   color: #06c167;
+}
+/* ----- Mobile Menu Button ----- */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 6px;
 }
 
 /* hero section style start */
@@ -109,16 +120,14 @@ nav {
 }
 /* hero end */
 
-/* ----- Mobile Menu Button ----- */
-.menu-btn {
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  padding: 5px 10px;
-  border-radius: 6px;
+/* company logo section start */
+.company-logo {
+  margin: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }
+/* company logo section end */
 
 /* ----- Responsive ----- */
 @media (max-width: 768px) {
@@ -202,4 +211,16 @@ nav {
     margin-left: 5px;
   }
   /* hero end */
+  /* company logo section start */
+  .company-logo {
+    width: 100%;
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .company-logo img {
+    width: 30%;
+  }
+  /* company logo section end */
 }
