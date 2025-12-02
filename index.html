@@ -3,61 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organic Food Store Landing Page Design Using HTML & CSS</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Organic Food Store - Healthy and fresh foods for everyone."
+    />
+
+    <title>Organic Food Store Landing Page</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    <section id="hero-section" class="section-w">
-      <!-- Header start -->
-      <header>
+    <main>
+      <!-- Hero Section -->
+      <header id="hero-section" class="section-w">
+        <!-- Navbar -->
         <nav class="navbar">
           <div class="logo">Foodies</div>
 
           <ul class="nav-links" id="navLinks">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Service Us</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">Our Company</a></li>
             <li><a href="#">Pages</a></li>
           </ul>
 
-          <div class="menu-btn" id="menuBtn">☰</div>
+          <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+            ☰
+          </button>
         </nav>
-      </header>
-      <!-- Header end -->
 
-      <!-- Hero start -->
-      <div class="hero-start">
-        <div class="hero-content">
-          <h1>We're Serious For Food.</h1>
-          <p>
-            We strive to provide a space where guests can connect with
-            themselves and explore their full potential, offering a safe place.
-          </p>
-          <div class="hero-btn">
-            <a href="#">Get Started</a>
-            <img src="./image/rightarrow.png" alt="Right Arrow" />
+        <!-- Hero Content -->
+        <section class="hero-start">
+          <div class="hero-content">
+            <h1>We're Serious About Food.</h1>
+            <p>
+              We strive to provide a space where guests can connect with
+              themselves and explore their full potential, offering a safe and
+              friendly place.
+            </p>
+
+            <div class="hero-btn">
+              <a href="#">Get Started</a>
+              <img src="./image/rightarrow.png" alt="Right Arrow Icon" />
+            </div>
+          </div>
+
+          <div class="hero-img">
+            <img src="./image/PlaceYourImage.jpg" alt="Fresh Organic Food" />
+          </div>
+        </section>
+      </header>
+
+      <!-- Company Logos Section -->
+      <section class="section-w">
+        <div class="company-logo">
+          <div class="company-logo-one">
+            <img src="./image/comlogo1.png" alt="Company Logo 1" />
+            <img src="./image/comlogo2.png" alt="Company Logo 2" />
+          </div>
+
+          <div class="company-logo-two">
+            <img src="./image/comlogo3.png" alt="Company Logo 3" />
+            <img src="./image/comlogo4.png" alt="Company Logo 4" />
+          </div>
+
+          <div class="company-logo-three">
+            <img src="./image/comlogo5.png" alt="Company Logo 5" />
           </div>
         </div>
-        <div class="hero-img">
-          <img src="./image/PlaceYourImage.jpg" alt="Hero Image" />
+      </section>
+      <!-- free shipping section start -->
+      <section id="freeShipping">
+        <div class="free-shipping">
+          <div class="free-shipping-one">
+            <div class="free-shipping-one1">
+              <div class="free-shipping-img">
+                <img src="./image/fs1.png" alt="freeShipping1" />
+              </div>
+              <div>
+                <h6>Free Shipping</h6>
+                <p>Orders over $140</p>
+              </div>
+            </div>
+            <div class="free-shipping-one2">
+              <div class="free-shipping-img">
+                <img src="./image/fs2.png" alt="freeShipping2" />
+              </div>
+              <div>
+                <h6>Quick Payment</h6>
+                <p>100% secure payment</p>
+              </div>
+            </div>
+          </div>
+          <div class="free-shipping-two">
+            <div class="free-shipping-one1">
+              <div class="free-shipping-img">
+                <img src="./image/fs3.png" alt="freeShipping3" />
+              </div>
+              <div>
+                <h6>Special Promo</h6>
+                <p>Get special promo</p>
+              </div>
+            </div>
+            <div class="free-shipping-one2">
+              <div class="free-shipping-img">
+                <img src="./image/fs4.png" alt="freeShipping4" />
+              </div>
+              <div>
+                <h6>24/7 Support</h6>
+                <p>Ready support</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Hero end -->
-    </section>
+      </section>
+      <!-- free shipping section end -->
+    </main>
 
-    <!-- company section -->
-    <section class="section-w">
-      <div class="company-logo">
-        <img src="./image/comlogo1.png" alt="" />
-        <img src="./image/comlogo2.png" alt="" />
-        <img src="./image/comlogo3.png" alt="" />
-        <img src="./image/comlogo4.png" alt="" />
-        <img src="./image/comlogo5.png" alt="" />
-      </div>
-    </section>
-
-    <!-- Navbar script -->
+    <!-- Navbar Script -->
     <script>
       const menuBtn = document.getElementById("menuBtn");
       const navLinks = document.getElementById("navLinks");
